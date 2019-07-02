@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f716609ce8.js"></script>
+
+    <!-- Raleway Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Guz Web Media | Survey</title>
+  </head>
+  <body>
+    <!-- Main Survey -->
+    <main>
+      <div class="container">
+        <h1 id="title">Survey</h1>
+        <p id="description">Tell us how we are doing</p>
+      </div>
+      <div class="form-outer">
+        <form id="survey-form">
+          <!-- Where the user enter their name -->
+          <div class="container">
+            <div class="left-side">
+              <label for="name" id="name-label"><sup>* </sup>Name: </label>
+            </div>
+            <div class="right-side">
+              <input
+                type="text"
+                id="name"
+                placeholder="John Doe"
+                required
+                name="name"
+              />
+            </div>
+          </div>
+          <!-- Where the user enter their email -->
+          <div class="container">
+            <div class="left-side">
+              <label for="email" id="email-label"><sup>* </sup>Email: </label>
+            </div>
+            <div class="right-side">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="johndoe@gmail.com"
+                required
+              />
+            </div>
+          </div>
+          <!-- Where the user enter their age -->
+          <div class="container">
+            <div class="left-side">
+              <label for="number" id="number-label"><sup>*</sup> Age: </label>
+            </div>
+            <div class="right-side">
+              <input
+                type="number"
+                name="age"
+                id="number"
+                placeholder="24"
+                min="1"
+                max="115"
+                required
+              />
+            </div>
+          </div>
+          <!-- What do you like most about our company section -->
+          <div class="container">
+            <div class="left-side">
+              <label for="dropdown" id="dropdown-label"
+                >Why do you like most about Guz Web Media?</label
+              >
+            </div>
+            <div class="right-side">
+              <select name="dropdown" id="dropdown">
+                <option value="">Please choose an option</option>
+                <option value="Design">Design</option>
+                <option value="Speed">Speed</option>
+                <option value="Pricing">Pricing</option>
+              </select>
+            </div>
+          </div>
+          <!-- Would you recommend us -->
+          <div class="container">
+            <div class="left-side">
+              <label for="recommendation" id="radio-label"
+                >Would you recommend us to a family member or friend?</label
+              >
+            </div>
+            <div class="right-side">
+              <input
+                type="radio"
+                name="recommendation"
+                value="Definitely"
+              />Definitely
+              <input type="radio" name="recommendation" value="Maybe" />Maybe
+              <input type="radio" name="recommendation" value="Nope" /> Nope
+            </div>
+          </div>
+          <!-- Improvement section -->
+          <div class="container">
+            <div class="left-side">
+              <label for="improvements">What we should improve on?</label>
+            </div>
+            <div class="right-side">
+              <input
+                type="checkbox"
+                name="improvements"
+                id="design"
+                value="Design"
+              />
+              <label for="design">Design</label>
+              <input
+                type="checkbox"
+                name="improvements"
+                id="pricing"
+                value="Pricing"
+              />
+              <label for="pricing">Pricing</label>
+              <input
+                type="checkbox"
+                name="improvements"
+                id="speed"
+                value="Speed"
+              />
+              <label for="speed">Speed</label>
+              <input
+                type="checkbox"
+                name="improvements"
+                id="skills"
+                value="Skills"
+              />
+              <label for="skills">Skills</label>
+            </div>
+          </div>
+          <!-- Feedback Section -->
+          <div class="container">
+            <div class="left-side">
+              <label for="feedback" id="feedback-label"
+                >Please Provide Any Feedback:
+              </label>
+            </div>
+            <div class="right-side">
+              <textarea
+                name="feedback"
+                id="feedback"
+                cols="25"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <!-- Submit section -->
+          <div class="container">
+            <input type="submit" value="Submit" id="submit" class="btn" />
+          </div>
+        </form>
+        <footer>
+          <div class="social-media-links">
+            <a
+              href="https://www.facebook.com/profile.php?id=100005254488367"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/david-guzman-23aba2140/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://twitter.com/daveguz3197" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <p>&copy; 2019, David Guzman</p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
