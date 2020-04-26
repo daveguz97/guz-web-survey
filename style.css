@@ -100,71 +100,13 @@ footer {
   padding-bottom: 1rem;
 }
 
-/* Animation for a bounce effect */
-
-@keyframes social-media-effects {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  5% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  15% {
-    transform: translateY(0);
-    padding-bottom: 5px;
-  }
-  30% {
-    transform: translateY(-50%);
-  }
-  40% {
-    transform: translateY(0%);
-    padding-bottom: 6px;
-  }
-  50% {
-    transform: translateY(-30%);
-  }
-  70% {
-    transform: translateY(0%);
-    padding-bottom: 7px;
-  }
-  80% {
-    transform: translateY(-15%);
-  }
-  90% {
-    transform: translateY(0%);
-    padding-bottom: 8px;
-  }
-  95% {
-    transform: translateY(-7%);
-  }
-  97% {
-    transform: translateY(0%);
-    padding-bottom: 9px;
-  }
-  99% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0);
-    padding-bottom: 9px;
-    opacity: 1;
-  }
-}
-
 .social-media-links a {
   color: #3f83f1;
+  transition: all 300ms ease-in-out
 }
 
 .social-media-links a:hover {
   color: #2370fe;
-  animation-name: rotate 500;
-}
-
-.social-media-links .fab:hover {
-  animation-name: social-media-effects;
-  animation-duration: 1000ms;
 }
 
 .social-media-links .fab {
